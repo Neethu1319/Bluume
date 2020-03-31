@@ -1,3 +1,3 @@
 <?php
-echo "Welcome to Bluume";
+echo "CI PoC";
 ?>
