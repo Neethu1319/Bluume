@@ -1,4 +1,10 @@
 <?php
 echo "Welcome to Bluume";
-print_r(DB_NAME);
+$conn = mysqli_connect(HOST, DB_USER, DB_PASSWORD, DB_NAME);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}else{
+  echo "success";
+}
 ?>
